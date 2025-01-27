@@ -4,12 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea Shop</title>
+    <!-- google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Tailwind CSS cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: [],
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="space-y-4 max-w-screen-xl mx-auto px-4">
-    <div class="h-24 text-center pt-10 bg-slate-300">div1</div>
-    <div class="h-24 text-center pt-10 bg-slate-300">div1</div>
-    <div class="h-24 text-center pt-10 bg-slate-300">div1</div>
-    <div class="h-24 text-center pt-10 bg-slate-300">div1</div>
+  <body>
+    <!-- Main container -->
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+      <!-- Header section -->
+      <header class="flex pt-10 mb-20">
+        <!-- Text content -->
+        <div>
+          <h1 class="text-5xl md:text-7xl">
+            Its good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <br />
+          <p class="text-gray-500 w-3/4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perferendis, pariatur?
+          </p>
+          <br />
+          <button
+            class="bg-gradient-to-r from-orange-600 to-red-700 px-5 py-3 rounded-lg text-white"
+          >
+            Explore More
+            <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
+          </button>
+        </div>
+        <!-- image content -->
+        <div class="relative">
+          <!-- img -->
+          <div>
+            <img class="w-full" src="./images/banner.png" alt="banner image" />
+          </div>
+          <!-- card -->
+          <div
+            class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 md:top-80 md:left-32 lg:left-28"
+          >
+            <!-- icon -->
+            <div>
+              <i class="fa-solid fa-star text-2xl text-amber-500"></i>
+            </div>
+            <!-- text -->
+            <div class="ml-2">
+              <h2 class="lg:text-2xl font-bold">5.00</h2>
+              <p class="text-gray-500">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
   </body>
 </html>
